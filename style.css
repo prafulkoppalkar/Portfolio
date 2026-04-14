@@ -210,13 +210,17 @@ section .content{
   padding: 5%;
 }
 .dp{
-  opacity: 50%;
+  opacity: 100%;
   cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #fe2306;
+  box-shadow: 0 0 18px 4px rgba(254, 35, 6, 0.45);
+  transition: all 0.3s ease;
 }
 .dp:hover{
-  scale: 1.2;
-  opacity: 100%;
-  transition: all 0.1s ease-in;
+  scale: 1.06;
+  box-shadow: 0 0 32px 8px rgba(254, 35, 6, 0.75);
+  transition: all 0.3s ease;
 }
 .about{
   background: #000000;
@@ -260,8 +264,8 @@ section .title span::after{
 .about .left img{
   height: 400px;
   width: 400px;
-  object-fit:contain;
-  border-radius: 12px;
+  object-fit: scale-down;
+  border-radius: 50%;
 }
 .about-details .right{
   width: 55%;
@@ -501,10 +505,10 @@ footer .text span a:hover{
   }
   .dp{
     opacity: 100%;
-    scale: 1.1;
+    scale: 1;
   }
   .dp:hover{
-    scale:1.1
+    scale: 1.06;
   }
   .about .about-details .left{
     display: flex;
@@ -522,8 +526,10 @@ footer .text span a:hover{
 }
 @media (max-width: 900px) {
   .about .left img{
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: scale-down;
   }
   .scroll-button{
     display: None;
